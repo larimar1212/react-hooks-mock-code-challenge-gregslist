@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import Search from "./Search";
 
-function Header() {
+
+function Header({listings}) {
+  const [filter, filterByName] = useState('')
+  
+
+  const searchName = listings.filter((liname) => {
+    return liname.toLowerCase().includes.filterByName().toLowerCase()
+  })
+
+
+
   return (
     <header>
       <h1>
@@ -16,3 +26,6 @@ function Header() {
 }
 
 export default Header;
+
+
+//Onchange e . trget .vALUE? NDEIEDEI

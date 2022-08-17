@@ -1,14 +1,19 @@
 import React from "react";
 
 function Search() {
+
+
+
   function handleSubmit(e) {
     e.preventDefault();
     console.log("submitted");
   }
 
+
+
   return (
     <form className="searchbar" onSubmit={handleSubmit}>
-      <input
+      <input o
         type="text"
         id="search"
         placeholder="search free stuff"
